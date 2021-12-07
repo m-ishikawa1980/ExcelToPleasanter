@@ -256,7 +256,7 @@ For j = 1 To maxCol
                                                     Worksheets(sheetName).Cells(テーブル登録入力エリア.開始行 + 1, j), _
                                                     CreateRecordJson)
             
-        Case InStr(Worksheets(sheetName).Cells(テーブル登録入力エリア.開始行, j + 1).Value, "Num")
+        Case InStr(Worksheets(sheetName).Cells(テーブル登録入力エリア.開始行, j).Value, "Num")
         
             If numHashFirst = True Then
                 '初回だけ作る
@@ -268,7 +268,7 @@ For j = 1 To maxCol
                                                     Worksheets(sheetName).Cells(テーブル登録入力エリア.開始行 + 1, j), _
                                                     CreateRecordJson)
         
-        Case InStr(Worksheets(sheetName).Cells(テーブル登録入力エリア.開始行, j + 1).Value, "Date")
+        Case InStr(Worksheets(sheetName).Cells(テーブル登録入力エリア.開始行, j).Value, "Date")
         
             If dateHashFirst = True Then
                 '初回だけ作る
